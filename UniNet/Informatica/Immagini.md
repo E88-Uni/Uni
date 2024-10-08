@@ -59,4 +59,33 @@ MPEG : Moving Picture Experts Group. Non solo computer ma anche telefisione Sate
 Standard MPEG-2 del 1994 Richiede da 4 a 10 MB al Secondo
 
 # Codifica Suoni e Voce
-Todo : min -11
+Tramite **Convertitore Analogico Digitale** :
+Prende il segnale da un microfono o un sensore e da segnale elettrico lo trasforma e trasferisce in una sequenza di bit
+## Suoni
+Convertitore A/D : 
+Utilizza Input tramite Sensori poi il Trasduttore converte in segnale elettrico poi il Convertitore A/D converte in sequenze di numeri bit 
+
+Va preso il valore dei segnali di input a **intervalli fissi** cioè la **frequenza di campionamento** che è la precisione dell'informazione espressa in **Hertz** cioè **volte al secondo** 
+
+## Musica CD
+- Percepita dall'uomo tra 0 e 20 000 Hz (20kHz)
+- 44100 Hz cioè campioni al secondo
+- 16 bit per campione
+- 2 Canali
+
+Quindi il **CD Audio** quanti bit al secondo ? = 44100 * 16 * 2 = 1 400 000 bit/s
+
+**MP3** (MPEG Audio Layer 3) Algoritmo di compressione audio con perdita
+
+**MIDI** (Musical Instrument Digital Interface) Rappresenta Spartiti Musicali Elettronici
+
+## Voce
+
+Voce intelleggibile per l'uomo tra 0 e 4kHz
+
+**PCM** (Pulse Code Modulation) del 1937 Telefonia Fissa Digitale :
+ - 8 kHz
+ - 8 bit Campione
+ - 64 kbit/s
+
+**CELP** (Code-Excited Linear Predict)Telefonia Mobile Cellulare 10 kbit/s
