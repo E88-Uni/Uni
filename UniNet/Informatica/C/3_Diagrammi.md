@@ -51,5 +51,26 @@ Sorgente gestione treni : Dato un orario ferroviario, si individui tutti i treni
  4. Minuto di Partenza : int
 
 Numero totale delle linee : N.
+Soluzione : 
+ 1. Tempo totale : in Minuti cioè 60*Ore + minuti
+ 2. Confronto e calcoli direttamente con minuti
+ 3. Stazione di Partenza è quella selezionata?
+ 4. ->NO-> Linea Sucessiva
+ 5. ->SI-> Controllo la stazione d'Arrivo? 
+ 6. ->NO-> Linea Sucessiva
+ 7. ->SI-> Controllo l'Orario, il treno è nelle 2 ore?
+ 8. ->NO-> Linea Sucessiva
+ 9. ->SI-> Salvo il Treno
+ 10. Non ci sono altre linee sucessive : Do i treni salvati
+ 11. Se non ci sono treni salvati lo dico
+ 12. Gestione Orario quando supera le 24.00
+
+TODO : Esercizio Stazione Treni C
+
+Isola che sta dentro 100m x 100m : ognini blocco ha l'altezza dal livello del mare.
+Massimo della colonna è anche masimo della riga? Se si vedo il mare.
+Fai da 1 a 4 torri per vedere il mare : max -> 2 torri riga massimo e colonna massimo
+Esercizio C
+
 
 Lezione 19 -18
