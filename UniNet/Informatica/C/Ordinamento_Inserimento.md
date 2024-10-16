@@ -9,9 +9,9 @@ TODO: Lezione 30
 Testa se giusto
 ```c
 void bubble_sort(int A[], int dim){
-    int i = 0, j = 0;
-    for(; i<dim-1; i++){
-        for(; j < dim - i + 1; j++){
+    int i,j;
+    for(i = 0; i<dim-1; i++){
+        for(j = 0; j < dim - i + 1; j++){
             if(A[j]>A[j+1]){
                 swap(A+j, A+j+1);
             }
