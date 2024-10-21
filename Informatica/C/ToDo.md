@@ -18,3 +18,6 @@ TODO Fail Errori
  - scanf&
  - 1/2 != 1.0/2
  - Random float
+ - 
+ 
+ NOTA GitHub a Cartella Singola non più Informatioca troppo pesante
