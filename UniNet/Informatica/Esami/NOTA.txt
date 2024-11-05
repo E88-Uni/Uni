@@ -1,0 +1,1 @@
+Nelle singole directory ci sono i progetti Code::Blocks, basta fare click sul file .cbp per aprirlo. Per ciascun progetto, i file di input vengono letti/scritti nella stessa directory del progetto.
