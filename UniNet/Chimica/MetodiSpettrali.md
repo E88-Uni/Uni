@@ -66,4 +66,12 @@ Per ridurre il tempo di calcolo si fa uno screening su gli angoli di diffrazzion
 
 ## Metodi Comuni
 Esempi di metodo spettrale per matrici comuni 
-Lez.11 min -10.05
+
+Durezza acqua calcolata in base a quantità Calcio e Magnesio, EDTA si lega a entrambi e viene evidenziato con un colorante, esso si lega fino a quando non c'è più nessuna delle due sostanze, dal colorante i capisce quando avviene l'equilibrio e quanto EDTA c'è voluto.
+
+## Monitoraggio Chimico
+Diversa dall'analisi chimica, perchè è una valutazione ripetuta nel tempo e nello spazio, non necessità di ogni volta una condizione di equilibrio, necessità attendibilità del , testare prima il metodo con riferimenti, referenziazione analitica.
+Limiti di rivelabilità deve essere coerente con sicurezza.
+Tempi di risposta veloce, e sostanza cambia nel tempo, per quella è monitorata.
+
+Lez.11 min -4.00
