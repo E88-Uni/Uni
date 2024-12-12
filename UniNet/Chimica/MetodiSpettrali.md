@@ -72,6 +72,9 @@ Durezza acqua calcolata in base a quantità Calcio e Magnesio, EDTA si lega a en
 ## Monitoraggio Chimico
 Diversa dall'analisi chimica, perchè è una valutazione ripetuta nel tempo e nello spazio, non necessità di ogni volta una condizione di equilibrio, necessità attendibilità del , testare prima il metodo con riferimenti, referenziazione analitica.
 Limiti di rivelabilità deve essere coerente con sicurezza.
-Tempi di risposta veloce, e sostanza cambia nel tempo, per quella è monitorata.
+Tempi di risposta veloce, e sostanza cambia nel tempo, per quello è monitorata.
 
-Lez.11 min -4.00
+## Rierimento
+- Metodi di Riferimento : Qualità e Affidabilità della misura
+- Prodotti di Riferimento : Internalizzazione dei Mercati, Qualità delle merci
+- Chimiometri : Satistica della Chimica permette di ridurre le misure al minimo essenziale, economia della misura
