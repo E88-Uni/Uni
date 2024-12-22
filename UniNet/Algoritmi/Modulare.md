@@ -11,6 +11,7 @@ Necessità di creare programmi distribuiti su più file sorgenti
 ![alt text](img\FileSorgenti.PNG)
 
 Gestione Modulare:
+
 ![alt text](img\FileModulari.PNG)
 
 ## Modulo Oggetto
