@@ -79,7 +79,7 @@ Cosa si può
  px = py; //Assegnazione
  px==py;  //Confronto
 
- px+py; //Somma non valisa
+ px+py; //Somma non valida
  px-ppy; //Sottrazione non valida se non puntano allo stesso tipo
  p = 3; //Assegnazzione non valida.
  p = NULL; //Unico tipo di assegnazione a costante valida
