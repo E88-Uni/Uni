@@ -144,5 +144,35 @@ I Materiali sono:
  - **Termoplastiche :** Si ammorbidiscono con la temperatura, Strutture Linari e Ramificate.
  - **Termoindurenti :** Si induriscono con la temperatura, Strutture Reticolate.
 
-lez 14
+## Interazione Plastica / Ambiente
+La Plastica subisce un insidioso e difficile processo di decomposizione.
+Composta da lunghe catene di cabonio dette polimeri.
+Questi legami si indeboliscono con : temperatura(Termica), raggi UV(FotoChimica) e ossidazione(Chimica).
+
+**Riduzione delle proprietà meccaniche :**A causa dell'ossidazione e dell'idrolisi,
+Attraverso coinvolgimento radicali liberi provenienti dall'esterno e della rottura dei legami chimici.
+
+Idrolisi : vapore acqueo che si interpone tra i legami molecolari.
+Radicali Liberi : reagenti per doppietto elettronico libero :
+ - Ossidazione : per perdita di elettroni
+ - Riduzione : per aquisto di elettroni
+
+Polipropilene specialmente reagente quindi si decompone facilmente.
+
+## Resistenza Chimica
+Le materiali plastiche sono **resistenti ad acidi e alcali-basi**, buona resistenza agli agenti chimici.
+Es. Polivinile, Polietilene, Polipropilene
+
+## Degrado Chimico-Fisico
+Aria-Ossigeno, Luce, Aria-Vento, Polvere, Inquinanti Atmosferici, Microorganismi, acque salate, benzina.
+
+Ci sono differenze di come degradano polimeri diversi, e lo stesso polimero con : peso molecolare diverso,
+distribuzione dei pesi molecolari, processo di sintesi ...
+
+Si ha una media di attesa di degradazione perchè il polimero non è del tutto omogeneo.
+
+lez 14 -17min
+
+## Stabilità Chimica Plastiche
+### Futuri Sviluppi 
 
