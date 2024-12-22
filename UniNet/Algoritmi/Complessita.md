@@ -59,7 +59,7 @@ Es. f(n) = 7n + 5nlogn + 3n<sup>2</sup> -> f(n)=$\Theta$(n<sup>2</sup>)
 ```c
 void insertionSort(int A[], int dim){
     int i=1, j;
-    for(; i<n;i++){
+    for(; i<dim;i++){
         int temp = A[i];
         j = i-1;
         while(A[j]>temp && j>=0){
