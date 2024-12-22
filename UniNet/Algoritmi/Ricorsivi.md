@@ -70,7 +70,9 @@ void f(int n){
 ```
 **TOP-DOWN**
 Problema dei sottoproblemi identici ripetuti più volte
+
 ![alt text](img\alberoTopDown.PNG)
+
 Soluzione lettura albero da sx verso dx : 1 3 2 1
 
 **BOTTOM-UP**
@@ -109,6 +111,7 @@ Variabili automatiche + funzione :
  4. Indirizzo del codice della funzione : puntatore alla prima istruzione
 
 **Singolo Frame Funzione :**
+
 ![alt text](img\STackComponent.PNG)
 
 ### Stack Overflow
