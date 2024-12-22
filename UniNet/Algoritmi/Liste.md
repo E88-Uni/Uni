@@ -84,7 +84,7 @@ typedef struct{
 } infolist;
 ```
 ### Liste Ordinate
-Le chiavi vengono uate per ordinre la lista ad ogni update(modifica, inserimento, cancellazzione)
+Le chiavi vengono usate per ordinre la lista ad ogni update(modifica, inserimento, cancellazzione)
 
 # Impementazioni
 ## Inizializza e Ricerca
