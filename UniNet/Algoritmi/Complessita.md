@@ -8,6 +8,10 @@ Limite Superiore e Inferiore : O e $\Omega$
 Limite Stretto : $\Theta$
 
 f(n) = O(g(n))
+
+**n** : numero elementi
+
+Calcolo da 1 a n : (i=1, i<=n, i++);
 ### Definizione O()
 Ci intaressa che per n grandi, superiori uguali a n0 la funzione sia limitata superiormente, così da poterne definire la complessità
 ![alt text](img\O(g(n)).jpg)
@@ -132,15 +136,14 @@ int search(int *A, int dim, int key) {
 
 - Caso Migliore : A[0] -> T(n) = O(1) : Complessità Costante
 - Caso Peggiore : A[dim-1] Oppure Non Presente -> T(n) = O(n) : Complessità Lineare
-- Caso Medio : Probabilità chiave in Posizione i = 1/(dim-1)
+- Caso Medio : Probabilità chiave in Posizione i = 1/n
 
+**n :** numero elementi
 ### Caso Medio - Complessità Probabilistica
-Probabilità chiave in Posizione i = 1/(dim-1) = 1/n
+Probabilità chiave in Posizione i = 1/n
 
-**n = dim-1**
+**n = dim**
 
 T(n) = $\sum$ $\frac{1}{n}$ * i = $\frac{1}{n}$*$\frac{n*(n+1)}{2}$
 
 T(n) = (n+1)/2 = O(n)
-
-TODO : Lez. 11 
