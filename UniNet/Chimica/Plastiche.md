@@ -171,8 +171,50 @@ distribuzione dei pesi molecolari, processo di sintesi ...
 
 Si ha una media di attesa di degradazione perchè il polimero non è del tutto omogeneo.
 
-lez 14 -17min
-
 ## Stabilità Chimica Plastiche
-### Futuri Sviluppi 
+**Chimica della Stabilizzazione** : Ha come base i meccanismi di di degradazione differenziata in **eventi degradativi** come :
+luce, temperatura, ossigeno, polvere, ecc. 
 
+### Stabilità - Termodinamica
+Persistenza Molecolare cioè resistenza a modificare la molecola.
+Tiene conto della varianza dell'ambiente in relazione alla molecola ma non della modifica in tempi lunghi.
+
+Non c'è una modificazione spontanea di trasformazione nel tempo. Se un composto è o non è stabile.
+### Inerzia Chimica - Cinetica
+Modificazione Molecolare lenta nel tempo, può essere talmente lenta che la molecola è stabile nel tempo.
+
+Se un composto tende a trasformarsi rapidamente o lentamente.
+
+**Permanenza Ambientale :** Indica che una determinata sostanza non è facilmente **biodegradabile**. 
+Da parte dei batteri, miceti, funghi o altri agenti naturali.
+
+### Ossidazione
+La maggior parte delle plastiche moderne decade principalmente con l'ossigeno.
+Esse sono più protette se sigillate in un atmosfera priva di ossigeno.
+
+In Opposizione con **Acetato di Cellulosa** senza ventilazione i vapori di acido acetico,
+provenienti dalla sostanza ne accellerano il decadimento.
+
+### Anti-Invecchiamento
+Aggiunta composti come strategia per bloccare la degradazione fin dalle fasi iniziali.Come schermi solari.
+
+**Svantaggio :** Possono essere costosi quindi usati  in quantità ridotte o possono perdere l'efficacia con il tempo.
+
+**Tecniche di Invecchiamento Accellerato :** Permettono di valutare gli effetti dell'invecchiamento così da prevenirlo. 
+
+### Composizione Polimero
+- Elementare
+- Molecolare
+- Strutturale
+- Stratigrafia
+
+## Futuri Sviluppi 
+**Materiali Composti = Matrice + Rinforzo :** 
+Non presenti in natura, struttura non omogenea, composti da due o più sostanze fisicamente separate con proprietà differenti.
+
+**Rinforzo :** Molto più rigido della matrice e determina le caratteristiche del composito.
+
+Il riforzo è detto anche **carica** ed ha lo scopo di aumentare determinate caratteristiche del composto.
+Per applicazioni in cui il materiale deve avere proprietà migliori e quindi vengono combinate.
+
+Rinforzo(Fibra o Carica) Disperso nella Matrice Plastica crea un Composito.
