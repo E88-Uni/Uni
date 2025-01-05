@@ -141,4 +141,43 @@ void quickSort(int *A, int l, int r) {
     }
 }
 ```
-Lez 13 -15
+
+## Limiti Teorici
+Non si può fare meglio di O(nlogn) senza assunzioni sui valori e se usiamo dei confronti.
+
+### Teorema
+Un albero di decisione che ordina **n** elementi ha un altezza $\Omega$(nlogn)
+
+### Corollario
+Nessun algoritmo di ordinamento basato sui confronti può avere complessità inferiore a nlogn
+
+### Dimostrazione
+L'Albero di decisione **è binario**, data altezza **h** ha al massimo **2<sup>h-1</sup>** foglie
+
+Num.Foglie >= Num.Permutazioni -> **2<sup>h-1</sup> >= n!**
+
+-> **h-1 >= log<sub>2</sub>(n!)**
+
+-> **log<sub>2</sub>(n!) >= log<sub>2</sub>(n/e)<sup>n</sup> = nlog<sub>2</sub>(n/e) = nlog<sub>2</sub>n - nlog<sub>2</sub>e**
+
+-> **h-1 >= nlog<sub>2</sub>n - nlog<sub>2</sub>e**
+
+-> **h = $\Omega$(nlogn)**
+
+### Approssimazione di Stirling 
+**n! >= (n/e)<sup>n</sup>** 
+
+con e = 2.7 costante di Eulero
+
+### Visualizzare Graficamente Limiti Teorici
+
+**O(nlogn) è la migliore complessità possibile** per un algoritmo basato sui confronti 
+
+Possiamo dimostrare che è la migliore complessità basandoci su una rappresenntazione dei confronti con un **albero di decisione** :
+- **Nodo :** Un Confronto tra Due valori
+- **Foglia :** Una delle possibili permutazioni
+- **Percorso :** Da radice a foglia rappresenta una possibile esecuzione dell'algoritmo per un dato insieme di valori
+- **Altezza :** numero di confronti per l'ordinamento, cioè le permutazioni nel caso peggiore
+
+![alt text](img\LimitiTeorici.png)
+
