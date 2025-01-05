@@ -103,7 +103,22 @@ void heapSort(int *A, int dimHeap) {
 
 ## QuikSort
 
-Lezione 13
+Basato su **Divide et Impera**. Algoritmo ricorsivo basato su sottovettori.
+
+Chimato quick perchè tra i migliori basati fra il confronto.
+
+Fasi :
+1. Scelgo **Pivot** un elemento 
+2. Riorganizzo il vettore in base al Pivot, ordinamento parziale
+    1. Sposo a sinistra tutti gli elementi <= del Pivot
+    2. Quindi tutti elementi >= del Pivot saranno spostati a dx
+3. Ordino Ricorsivamente le Due Partizioni
+
+
+Sensibile ai dati a differenza dell'heapSort. Casi :
+1. Caso Migliore, quando le due partizioni sono bilanciate : T(n) = 2T(n/2) + O(n) -> O(nlogn)
+2. Caso Peggiore, quando le due partizioni sono fortemente sbilanciate : T(n) = T(n-1) + T(1) + O(n) -> $\Theta$ (n<sup>2</sup>)
+3. Caso Medio O(nlogn) basta che in media le partizioni siano proporzionate al dilà delle singole
 
 ```c
 int partition(int *A, int l, int r) {
@@ -126,3 +141,4 @@ void quickSort(int *A, int l, int r) {
     }
 }
 ```
+Lez 13 -15
