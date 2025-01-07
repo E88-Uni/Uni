@@ -83,9 +83,6 @@ Se x ha un figlio destro, il succesore è la chiave più piccola del sotto alber
 
 Se x non ha un figlio destro, allora attraverso l'albero finchè non trovo un nodo che sia figlio sinistro del suo genitore
 
-```c
-
-```
 
 ## Caso Peggiore BST
 **Cancellazzione Caso Peggiore T(n) = O(h)**
@@ -96,6 +93,44 @@ Se x non ha un figlio destro, allora attraverso l'albero finchè non trovo un no
 
 Se le chiavi sono inserite in ordine crescente o decrescente albero completamente sbilanciato perchè solo figli a destra(crescente) o solo a sinistra(decrescente), quindi la complssità h diventa n.
 
-TODO Dopo lez.16: Inmplementa Dizionari Ordinati e Non e Funzioni Dizionari Tramite Vettori(ordinati e non), Liste(ordinati e non), Code, Code a priorità, Stack. Controlla la complessità come in tabella
+TODO  Inplementa Dizionari Ordinati e Non e Funzioni Dizionari Tramite Vettori(ordinati e non), Liste(ordinati e non), Code, Code a priorità, Stack. Controlla la complessità come in tabella
 
 ![alt text](img\impleDizi.png)
+
+# Codice BST
+Leggi file 'BSTCode.txt'
+
+```c
+typedef struct Nodo {
+    int val;
+    struct Nodo* sx;
+    struct Nodo* dx;
+} Nodo;
+Nodo * cancellaNodo(Nodo *root, int valore) {
+    if(root == NULL) { /*Albero vuoto*/
+        return root;
+    }
+    if(val < root->val) { /*Cerca nodo da eliminare*/
+        root->sx = cancellaNodo(root->sx, val);
+    } else if(val > root->val) {
+        root->dx = cancellaNodo(root->dx, val);
+    } else { /*Nodo Trovato*/
+        if(root->sx == NULL) {/*Caso 1-2, un solo figlio dx o nessuno*/
+            Nodo *temp = root->dx;
+            free(root);
+            return temp;
+        } else if(root->dx == NULL ) {/*Caso 2, solo un figlio sx*/
+            Nodo *temp = root->sx;
+            free(root);
+            return temp;
+        }
+        /*Caso 3 : 2 Figli, Trovo succesore : nodo più piccolo del sottoalbero destro*/
+        Nodo *successore = tree_min(root->dx);
+        /*Copia valore del successore*/
+        root->val = successore->val;
+        /*Cancella successore*/
+        root->dx = cancellaNodo(root->dx, successore->val);
+    }
+    return root;
+}
+```
