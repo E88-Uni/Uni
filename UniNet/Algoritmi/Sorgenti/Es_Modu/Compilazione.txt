@@ -1,1 +1,0 @@
-gcc main_complex.c complex.c -o programma
