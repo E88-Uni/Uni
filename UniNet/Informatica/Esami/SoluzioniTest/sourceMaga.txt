@@ -1,0 +1,3 @@
+Chiodi 0.02 234
+Pinze 4.50 22
+Tenaglie 2.00 5
