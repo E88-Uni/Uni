@@ -1,0 +1,113 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Struttura del nodo del BST
+typedef struct Nodo {
+    int valore;
+    struct Nodo* sinistra;
+    struct Nodo* destra;
+} Nodo;
+
+// Funzione per creare un nuovo nodo
+Nodo* creaNodo(int valore) {
+    Nodo* nuovoNodo = (Nodo*)malloc(sizeof(Nodo));
+    nuovoNodo->valore = valore;
+    nuovoNodo->sinistra = NULL;
+    nuovoNodo->destra = NULL;
+    return nuovoNodo;
+}
+
+// Funzione per inserire un valore nel BST
+Nodo* inserisci(Nodo* radice, int valore) {
+    if (radice == NULL) {
+        return creaNodo(valore);
+    }
+    if (valore < radice->valore) {
+        radice->sinistra = inserisci(radice->sinistra, valore);
+    } else if (valore > radice->valore) {
+        radice->destra = inserisci(radice->destra, valore);
+    }
+    return radice;
+}
+
+// Funzione per trovare il nodo con il valore minimo in un BST
+Nodo* trovaMinimo(Nodo* radice) {
+    while (radice->sinistra != NULL) {
+        radice = radice->sinistra;
+    }
+    return radice;
+}
+
+// Funzione per cancellare un nodo dal BST utilizzando il successore
+Nodo* cancellaNodo(Nodo* radice, int valore) {
+    if (radice == NULL) {
+        return radice; // Albero vuoto
+    }
+
+    // Cerca il nodo da eliminare
+    if (valore < radice->valore) {
+        radice->sinistra = cancellaNodo(radice->sinistra, valore);
+    } else if (valore > radice->valore) {
+        radice->destra = cancellaNodo(radice->destra, valore);
+    } else {
+        // Nodo trovato
+        if (radice->sinistra == NULL) {
+            // Caso 1: Un solo figlio (destro) o nessun figlio
+            Nodo* temp = radice->destra;
+            free(radice);
+            return temp;
+        } else if (radice->destra == NULL) {
+            // Caso 1: Un solo figlio (sinistro)
+            Nodo* temp = radice->sinistra;
+            free(radice);
+            return temp;
+        }
+
+        // Caso 2: Due figli
+        // Trova il successore (nodo più piccolo nel sottoalbero destro)
+        Nodo* successore = trovaMinimo(radice->destra);
+
+        // Copia il valore del successore nel nodo corrente
+        radice->valore = successore->valore;
+
+        // Cancella il successore
+        radice->destra = cancellaNodo(radice->destra, successore->valore);
+    }
+    return radice;
+}
+
+// Funzione per effettuare una stampa In-Order (sinistra -> radice -> destra)
+void stampaInOrder(Nodo* radice) {
+    if (radice != NULL) {
+        stampaInOrder(radice->sinistra);
+        printf("%d ", radice->valore);
+        stampaInOrder(radice->destra);
+    }
+}
+
+// Main per testare l'implementazione
+int main() {
+    Nodo* radice = NULL;
+
+    // Inserimento dei nodi
+    radice = inserisci(radice, 50);
+    radice = inserisci(radice, 30);
+    radice = inserisci(radice, 20);
+    radice = inserisci(radice, 40);
+    radice = inserisci(radice, 70);
+    radice = inserisci(radice, 60);
+    radice = inserisci(radice, 80);
+
+    printf("BST In-Order prima della cancellazione:\n");
+    stampaInOrder(radice);
+    printf("\n");
+
+    // Cancellazione di un nodo
+    radice = cancellaNodo(radice, 50);
+
+    printf("BST In-Order dopo la cancellazione di 50:\n");
+    stampaInOrder(radice);
+    printf("\n");
+
+    return 0;
+}
