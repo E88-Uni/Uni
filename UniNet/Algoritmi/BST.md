@@ -99,5 +99,3 @@ Se le chiavi sono inserite in ordine crescente o decrescente albero completament
 TODO Dopo lez.16: Inmplementa Dizionari Ordinati e Non e Funzioni Dizionari Tramite Vettori(ordinati e non), Liste(ordinati e non), Code, Code a priorità, Stack. Controlla la complessità come in tabella
 
 ![alt text](img\impleDizi.png)
-
-Lez 16 -9min.
