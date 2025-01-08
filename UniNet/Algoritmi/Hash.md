@@ -132,5 +132,12 @@ Es. k(k, i) = (k mod 11 + i)mod 11
 Complessità Peggiore è Ricerca Senza Successo : O(1/(1-$\alpha$))
 
 ## Doppio Hashing
+h(k, i) = (h<sub>1</sub>(k) + i*h<sub>2</sub>(k)) mod m
 
-Lez 17 -2min.
+h<sub>1</sub>(k) : Funzione di Hash Primaria
+h<sub>2</sub>(k) : Funzione di Hash Secondaria
+
+### Complessità Doppsio Hashing
+Assumendo hashing uniforme il numero di tentativi per fare la Ricerca
+- Con Successo O((1\$\alpha$) * ln(1/(1-$\alpha$)))
+- Senza Successo O(1/(1-$\alpha$))
