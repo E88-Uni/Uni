@@ -214,7 +214,31 @@ in cui gli elementi sono ordinati.
 - remove_first(D, elem) : Rimuove il primo elemento da D
 - not_empty(D)  : True se D non è vuoto, False altrimenti
 
-Lez. 22 -3min. TODO: Algoritmo di Visita Generico
+## Vista Generica
+```c
+Inizialize(G) {
+    for u : V //Costo O(V)
+        color[u] = white
+}
+Visit(G, s) {
+    D = create_empty();
+    /*Sorgente colorata di grigio e aggiunta alla struttura dati D*/
+    color[s] = gray;
+    add(D, s);
+    while not_empty(D) {
+        u = first(D);
+        flag = Esiste un vertice bianco v adiacente a u?
+        if(flag) {
+            color[v] = gray
+            P[v] = u
+            add(D, v)
+        } else {
+            color[u] = black
+            remove_first(D)
+        }
+    }
+}
+```
 
 # Visite
 
