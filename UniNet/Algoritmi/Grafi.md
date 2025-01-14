@@ -240,6 +240,116 @@ Visit(G, s) {
 }
 ```
 
-# Visite
+# BFS - Visita in Ampiezza
+Breadth-First Search
 
-Lez. 23 Totale
+Scopre tutti i vertici a distanza n (n. di archi)
+dalla sorgente prima di scoprire quelli a distanza n+1
+
+Usa una **coda** per memorizzare i **vertici**
+
+Calcola la **distanza** in n. di archi di ogni vertice dalla sorgente
+
+Viene generato un **albero di visita**, con s come radice, 
+che include tutti i vertici raggiungibili dalla sorgente
+
+Ogni Cammino da s ad un vertice è minimo in n. di archi.
+
+Vertici non collegati hanno distanza infinita.
+
+Costo di tutte le liste di adiacena corrisponde all' numero di archi O(E)
+
+```c
+BFS (G, s) {//Costo O(V + E)
+    Q = create_empty();//Costo O(V)
+    color[s] = grey;
+    d[s] = 0;//Distanza 0 da sorgente rispetto a se stessa
+    enqueue(Q, s);//Aggiunge in coda
+    while not_empty(Q) {//Costo O(E)
+        u = head(Q);
+        for (ogni v adiacente a u) {
+            if color[v] == white {
+                color[v] = grey;
+                P[v] = u;//Predecessore salvato
+                d[v] = d[u] + 1;
+                enqueue(Q, v);//Aggiungo alla coda dei vertici grigi
+            }
+        }
+        dequeue(Q);//Elimino perchè vertice diventa nero
+        color[u] = black;
+    }
+}
+```
+### Proprietà BFS
+Detta $\delta$(s,v) la minima distanza cioè n. di archi tra s e v.
+Dopo la BFS(G, s) si ha che la distanza tra ogni vertice è uguale alla distanza minima
+
+# DFS - Vista in Profondità
+Depth-First Search
+
+Scopre tutti i vertici adiacenti al vertice scoperto per ultimo
+
+Uso uno stack - Coda LIFO - Pila
+
+Il Grafo dei Predecessori può risultare in una **foresta di alberi**.
+Visita ripetuta da più sorgenti.
+Vertici non collegati vengono esaminati, partendo la ricerca da un altro vertice.
+
+```c
+DFS (G, s) {//Costo O(V + E)
+    S = create_empty_stack();//Costo O(V)
+    color[s] = grey;
+    push(S, s);
+    while not_empty(S) {//Costo O(E)
+        u = top(S);
+        for (ogni v adiacente a u) {
+            if color[v] == white {
+                color[v] = grey;
+                P[v] = u;//Predecessore salvato
+                push(S, v);//Aggiungo alla coda dei vertici grigi
+            }
+        }
+        pop(S);//Elimino perchè vertice diventa nero
+        color[u] = black;
+    }
+}
+```
+
+Visita in Profondità, **somiglianza** con visita in ordine infisso di un albero. Vista in Profondità può essere implementata **ricorsivamente** come nel caso di vista alberi in ordine infisso.
+
+
+## Etichette Temporali
+Implementazione per Vista in Profondità. 
+DFS marca ogni vertice con informazioni di tempo :
+- d[v] : tempo in cui v viene scoperto (grigio)
+- f[v] : tempo in cui v è processato (nero)
+
+Info utili per applicazioni delle DFS. 
+Notazione Ogni vertice è etichettato con coppia d[v]/f[v]
+
+# CFC
+Componenti fortemente connesse : è un sottografo massimale in cui
+esiste un cammino orientato tra ogni sua coppia di nodi
+
+# Applicazioni DFS
+
+## Esempio
+Calcolo delle componenti fortemente connesse di un Grafo orientato.
+Utilizzando **Algoritmo con uso del Grafo Trasposto**
+
+Dato grafo orientato : G(V, E).
+Il grafo trasposto : Gt(V, Et), Ottenuto invertendo il verso degli archi
+
+Et = { (u, v) : (v, u) ∈ E }
+
+Note : Vedi Algoritmo di Kosaraju
+
+```c
+CFC(G){
+    DFS(G);
+    Costruisci Gt;
+    DFS(Gt) processando i vertici in ordine inverso di f[v];
+    Ritorna i vertici di ogni albero DFS come una CFC distinta;
+}
+```
+![alt text](img/GrafoInverso.JPG)
