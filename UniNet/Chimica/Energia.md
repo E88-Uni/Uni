@@ -55,5 +55,60 @@ Variazione di entalpia del sistema = Somma Entalpia Prodotti - Somma Entalpia Re
 Se Variazione Entalpia $\Delta$H > 0 -> Reazione Endotermica
 
 # Produzione Energia
+## Produzione Oggi
+### Biomasse
+Tutti i materiali di origine organica, vegetale o animale.
+Che NON abbiano subito processi di fossilizzazione(es petrolio) e utilizzati ai fini energetici.
+Come legno, pellet, scarti agrolimentari.
 
-Lez. 21 Totale
+La biomassa ha origine dall'energia della fotosintesi tramite il sole, cresce foglie legno..., che permette di avere prodotti 
+vegetali e animali che con la conbustione forniscono energia.
+
+Biomasse possono essere usate in normali caldaie o centrali termiche, 
+oppure in sistemi co-generativi per ottenere assieme energia elettrica e termica.
+
+### Pila 
+Trasformazione da energia chimica in elettrica
+
+All'interno della pila avviene una reazione chimica di ossidoriduzione:
+- Di ossidazione causando una perdita di elettroni
+- E una riduzione causando un acquisto di elettroni
+- Creazione di una corrente elettrica continua fino ad equilibrio
+
+### Alimenti
+Energia principale per gli organismi ossidazione/combustione Ossigeno -> CO2
+
+Tutte le sostanze contengono energia chimica ma solo gli alimenti sono compatibili
+con il corpo per ricavare energia e nutrimento di cui ha bisogno.
+
+Principi Nutritivi: 
+1. Zuccheri/Carboidrati/Glucidi : Capacità energetica minore, ma rapida
+2. Grassi/Lipidi
+3. Proteine/Protidi
+
+Un alimento può essere composto da 1(Olio, Zucchero) a tutti e 3 i componenti nutritivi
+
+Contenuto energetico alimento : energia Zuccheri + energia Grassi + energia Proteine 
+
+Principi nutritivi hanno potere calorifico diverso :
+- Zuccheri 4,5 calorie / grammo
+- Grassi 9 calorie / grammo
+- Proteine 9 calorie / grammo
+
+### Farbisogno Energetico
+Preferibilmente usare zuccheri e grassi per la produzione di energia.
+Perchè Proteine usate di più come materiale per nuove cellule, gli amminoacidi e quindi per la crescita dell'organismo
+
+## Combustibili Fossili
+Per utilizzare l'energia dei combustibili fossili, bisogna convertire questa energia, il modo più rapido è la combustione.
+Rilascio di energia maggiore delle biomasse ma con conseguente impatto ambientale.
+
+### Riscaldamento Globale
+E' causato dai **gas a effetto serra**, impediscono di riemetterre il calore assorbito :
+Anidride Carbonica, Metano, Clorofluorocarburi, protossido di azoto, ozono.
+Riscaldamento -> più vapore acqueo -> più effetto serra. 
+
+## Produzione Domani
+Ricerca di alternative ai combustibili fossili, in particolare come fonti energetiche.
+
+Lez. 21 Totale -10min.
